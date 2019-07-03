@@ -7,9 +7,10 @@ body {
     width: 100%;
     font-family: 'Open Sans'
 }
-.wrapper-container {
+.wrapper-content {
     width: 250px;
     background: lightblue;
+    margin: 0 auto;
 }
 header {
     background: lightblue;
@@ -32,14 +33,19 @@ input[type=text] {
 #submit {
     padding: 5px 10px;
     font-size: 15px;
+    cursor: pointer;
+    background: rgb(94, 171, 197);
+    border: none;
+    box-shadow: 2px 3px 2px lightblue;
+    font-weight: bold;
 }
 span {
-    font-size: 20px;
+    font-size: 12px;
 }
 li {
     background: white;
     padding: 5px 0px 5px 10px;
-    user-select: none;
+    cursor: pointer;
 }
 .checked {
     text-decoration: line-through
