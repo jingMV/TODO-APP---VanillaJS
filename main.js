@@ -31,6 +31,19 @@ submit.addEventListener('click', function() {
     li.appendChild(span);
     // clear the textbox after adding it
     document.getElementById("myTodo").value = ""
+    //add close btn
+    const spans = document.createElement("SPAN");
+    const textBtn = document.createTextNode("X");
+    li.appendChild(spans);
+    spans.appendChild(textBtn)
+    spans.className = "close";
+    //add event in close btn
+    const close = document.getElementsByClassName("close");
+    for (var i = 0; i < close.length; i++) {
+        close[i].addEventListener('click', function() {
+            li.style.display = "none"
+        })
+    }
 })
 
 

@@ -36,7 +36,7 @@ input[type=text] {
     cursor: pointer;
     background: rgb(94, 171, 197);
     border: none;
-    box-shadow: 2px 3px 2px lightblue;
+    box-shadow: 2px 3px 2px rgb(0, 155, 207);
     font-weight: bold;
 }
 span {
@@ -46,7 +46,17 @@ li {
     background: white;
     padding: 5px 0px 5px 10px;
     cursor: pointer;
+    position: relative;
 }
 .checked {
     text-decoration: line-through
+}
+.close {
+    background: red;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px 5px;
+    right: 15px;
+    cursor: pointer;
 }
