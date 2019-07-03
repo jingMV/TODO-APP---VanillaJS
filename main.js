@@ -41,7 +41,8 @@ submit.addEventListener('click', function() {
     const close = document.getElementsByClassName("close");
     for (var i = 0; i < close.length; i++) {
         close[i].addEventListener('click', function() {
-            li.style.display = "none"
+            const div = this.parentElement;
+            div.style.display = "none"
         })
     }
 })
